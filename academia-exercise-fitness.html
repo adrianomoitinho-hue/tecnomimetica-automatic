@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Exercise Fitness — Agende sua aula</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --bg:#0B1220;
+    --bg-card:#111B30;
+    --accent:#FF5A36;
+    --accent-soft:#FF5A3620;
+    --mint:#6EE7B7;
+    --text:#F5F5F0;
+    --text-dim:#9AA3B5;
+  }
+  body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;}
+  .display{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:0.02em;}
+  .stamp{
+    border:2px solid var(--mint);
+    color:var(--mint);
+    transform:rotate(-6deg);
+    font-family:'Oswald',sans-serif;
+    letter-spacing:0.08em;
+  }
+  .card-ficha{
+    background:var(--bg-card);
+    border:1px solid #1F2B45;
+    border-radius:4px;
+  }
+  .cta-btn{
+    background:var(--accent);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--accent-soft);}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .fade-up{animation:fadeUp .6s ease-out both;}
+  .fade-up-1{animation-delay:.05s;}
+  .fade-up-2{animation-delay:.15s;}
+  .fade-up-3{animation-delay:.25s;}
+  @media (prefers-reduced-motion: reduce){.fade-up{animation:none;}}
+</style>
+</head>
+<body class="min-h-screen">
+
+<div class="max-w-md mx-auto px-5 pt-10 pb-16">
+
+  <!-- Selo topo -->
+  <div class="flex justify-between items-center mb-8 fade-up fade-up-1">
+    <span class="text-xs tracking-widest text-[var(--text-dim)] display">FICHA DIGITAL · Feira de Santana</span>
+    <span class="stamp text-[10px] px-2 py-1 rounded">SISTEMA ATIVO</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="fade-up fade-up-1 mb-10">
+    <p class="text-[var(--accent)] display text-sm mb-2">Academia</p>
+    <h1 class="display text-4xl leading-[1.05] font-bold mb-4">Academia Exercise Fitness</h1>
+    <p class="text-[var(--text-dim)] text-base leading-relaxed">
+      Sua página pronta pra receber alunos direto pelo WhatsApp — sem depender de story, sem esperar engajamento.
+    </p>
+  </div>
+
+  <!-- Card ficha - agendamento -->
+  <div class="card-ficha p-5 mb-6 fade-up fade-up-2">
+    <p class="display text-xs text-[var(--text-dim)] mb-3">PRÓXIMO PASSO</p>
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <p class="font-semibold">Aula experimental</p>
+        <p class="text-sm text-[var(--text-dim)]">Resposta automática em segundos</p>
+      </div>
+      <span class="text-[var(--mint)] text-2xl">→</span>
+    </div>
+    <a href="https://wa.me/557532261626?text=Vim%20pelo%20site%2C%20quero%20saber%20mais" target="_blank"
+       class="cta-btn w-full block text-center text-white font-semibold py-3 rounded-md display text-sm">
+      Falar no WhatsApp agora
+    </a>
+  </div>
+
+  <!-- Resultados / prova -->
+  <div class="card-ficha p-5 mb-6 fade-up fade-up-3">
+    <p class="display text-xs text-[var(--text-dim)] mb-3">POR QUE ISSO IMPORTA</p>
+    <ul class="space-y-3 text-sm">
+      <li class="flex gap-3"><span class="text-[var(--mint)]">✓</span><span>Ninguém espera resposta — o contato é respondido na hora, 24h por dia.</span></li>
+      <li class="flex gap-3"><span class="text-[var(--mint)]">✓</span><span>Aluno que manda mensagem à noite não vira aluno perdido.</span></li>
+      <li class="flex gap-3"><span class="text-[var(--mint)]">✓</span><span>Agendamento e dúvidas resolvidos sem você no meio.</span></li>
+    </ul>
+  </div>
+
+  <!-- Endereço -->
+  <div class="text-center text-xs text-[var(--text-dim)] mb-8 fade-up fade-up-3">
+    Av. Francisco Fraga Maia - Parque Ipe, Feira de Santana - BA, 44053-055, Brasil
+  </div>
+
+  <!-- Rodapé / autoria -->
+  <div class="text-center border-t border-[#1F2B45] pt-6 fade-up fade-up-3">
+    <p class="text-xs text-[var(--text-dim)] mb-1">Essa página é uma demonstração pronta pra ativar.</p>
+    <p class="text-xs text-[var(--text-dim)]">Feito por <span class="text-[var(--text)] font-medium">Tecnomimética</span> — automação de WhatsApp para negócios locais.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
